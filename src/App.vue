@@ -1,11 +1,16 @@
-<script setup>
-
+<script >
+import Notes from './components/Notes.vue'
+export default {
+  components: {
+    Notes
+  }
+}
 
 </script>
 
 <template>
 <h1 class="text-3xl font-bold ">
-    Hello world!
+    <Notes />
   </h1>
 
 </template>
