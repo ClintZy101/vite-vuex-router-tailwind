@@ -1,19 +1,23 @@
-<script >
-import Notes from './components/Notes.vue'
-export default {
-  components: {
-    Notes
-  }
-}
-
-</script>
 
 <template>
-<h1 class="text-3xl font-bold ">
-    <Notes />
-  </h1>
+div
+  <div class="space-x-5 m-4">
+    <router-link to="/" class="text-blue cursor-pointer">Home</router-link>
+    <router-link to="/about" class="text-blue cursor-pointer"
+      >About</router-link>
+  </div>
 
+  <router-view />
 </template>
+
+<script >
+
+export default {
+  components: {
+
+  },
+};
+</script>
 
 <style>
 #app {
